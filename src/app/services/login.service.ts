@@ -43,6 +43,8 @@ export class LoginService {
 
       localStorage.setItem('currentUser', JSON.stringify(this.currentUser));
       this.router.navigate(['/control-panel/informations']);
+      console.log("ASDASDS");
+
     });
   }
 

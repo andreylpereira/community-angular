@@ -7,8 +7,6 @@ import { NotFoundComponent } from 'src/app/pages/not-found/not-found.component';
 const routes: Routes = [
   { path: '', redirectTo: '/control-panel', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: '404', component: NotFoundComponent },
-  // { path: '**', redirectTo: '404', pathMatch: 'full' },
   {
     path: 'control-panel',
 

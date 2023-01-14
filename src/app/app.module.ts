@@ -8,7 +8,6 @@ import { LoginComponent } from './pages/login/login.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { PanelControlComponent } from './pages/panel-control/panel-control.component';
 import { PagesModule } from 'src/app/pages/pages.module';
-import { HeaderComponent } from './shared/header/header.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
@@ -25,7 +24,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     LoginComponent,
     NotFoundComponent,
     PanelControlComponent,
-    HeaderComponent,
     SidebarComponent
   ],
   imports: [

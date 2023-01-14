@@ -7,6 +7,7 @@ import { FormsComponent } from 'src/app/pages/panel-control/forms/forms.componen
 import { InformationComponent } from 'src/app/pages/panel-control/information/information.component';
 import { CalendarComponent } from 'src/app/pages/panel-control/calendar/calendar.component';
 import { RegisterComponent } from 'src/app/pages/panel-control/register/register.component';
+import { NotFoundComponent } from 'src/app/pages/not-found/not-found.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,8 @@ const routes: Routes = [
         component: RegisterComponent,
         canActivate: [AuthGuard]
       },
+      { path: '404', component: NotFoundComponent },
+      { path: '**', component: NotFoundComponent },
     ],
   },
 ];
@@ -47,4 +50,5 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
+
 export class ControlPanelRoutingModule {}

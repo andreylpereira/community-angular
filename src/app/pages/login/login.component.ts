@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import Login from 'src/app/models/login.model';
 import { LoginService } from 'src/app/services/login.service';
 
@@ -13,10 +14,8 @@ export class LoginComponent implements OnInit {
   constructor(private formBuilder: FormBuilder, private loginService: LoginService) {
   }
 
-
   ngOnInit(): void {
   }
-
 
   public loginForm: FormGroup = this.formBuilder.group({
     login: ['', [Validators.required]],
@@ -31,4 +30,5 @@ export class LoginComponent implements OnInit {
     this.loginService.login(user);
     this.loginForm.reset();
   }
+
 }
