@@ -5,3 +5,9 @@
 .item-active {
   @apply bg-gray-300 bg-opacity-30 dark:bg-slate-800 text-emerald-500 flex items-center py-1.5 px-4 rounded cursor-pointer font-bold;
 }
+
+.drawer {
+  padding-top: 5px;
+  border-right: 1px;
+  border-radius: 15px;
+}
