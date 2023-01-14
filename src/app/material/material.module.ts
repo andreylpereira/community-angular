@@ -132,6 +132,7 @@ import { NgModule } from '@angular/core';
     OverlayModule,
     PortalModule,
     ScrollingModule,
+
   ],
 })
 export class MaterialModule {}
